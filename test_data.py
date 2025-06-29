@@ -1,19 +1,17 @@
 import os
 import sys
 import json
+import dotenv
+
 
 from dotenv import load_dotenv
 load_dotenv()
 
-from urllib.parse import quote_plus
-
-username = quote_plus("newuser77")
-password = quote_plus("newuer77")
 
 
 
-MONGO_DATA_URL = f"mongodb+srv://{username}:{password}@cluster0.xwrnqvc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-print(MONGO_DATA_URL)
+MONGO_DB_URL = f"mongodb+srv://veneeldas:Veneel123@cluster0.xwrnqvc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+print(MONGO_DB_URL)
 
 import certifi
 ca=certifi.where()
@@ -46,7 +44,7 @@ class NetworkDataExtract():
             self.collection=collection
             self.records=records
 
-            self.mongo_client=pymongo.MongoClient(MONGO_DATA_URL)
+            self.mongo_client=pymongo.MongoClient(MONGO_DB_URL)
             self.database = self.mongo_client[self.database]
 
             self.collection=self.database[self.collection]
