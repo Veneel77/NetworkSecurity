@@ -1,0 +1,7 @@
+[ 2025-06-30 00:15:38,839] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-06-30 00:15:38,852] 107 dagshub - INFO - Accessing as Veneel77
+[ 2025-06-30 00:15:39,245] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Veneel77/NetworkSecurity "HTTP/1.1 200 OK"
+[ 2025-06-30 00:15:39,571] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-06-30 00:15:39,574] 107 dagshub - INFO - Initialized MLflow to track repo "Veneel77/NetworkSecurity"
+[ 2025-06-30 00:15:39,575] 107 dagshub - INFO - Repository Veneel77/NetworkSecurity initialized!
+[ 2025-06-30 00:18:43,291] 41 root - INFO - Start data Ingestion
